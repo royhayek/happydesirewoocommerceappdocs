@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Google Sign in · Happy Desire - WooCommerce Flutter App</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="* Go back to your Firebase console"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Google Sign in · Happy Desire - WooCommerce Flutter App"/><meta property="og:type" content="website"/><meta property="og:url" content="https://royhayek.github.io/HappyDesireWooCommerceAppdocs/"/><meta property="og:description" content="* Go back to your Firebase console"/><meta property="og:image" content="https://royhayek.github.io/HappyDesireWooCommerceAppdocs/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://royhayek.github.io/HappyDesireWooCommerceAppdocs/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/HappyDesireWooCommerceAppdocs/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://royhayek.github.io/HappyDesireWooCommerceAppdocs/blog/atom.xml" title="Happy Desire - WooCommerce Flutter App Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://royhayek.github.io/HappyDesireWooCommerceAppdocs/blog/feed.xml" title="Happy Desire - WooCommerce Flutter App Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/HappyDesireWooCommerceAppdocs/js/scrollSpy.js"></script><link rel="stylesheet" href="/HappyDesireWooCommerceAppdocs/css/main.css"/><script src="/HappyDesireWooCommerceAppdocs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/HappyDesireWooCommerceAppdocs/"><img class="logo" src="/HappyDesireWooCommerceAppdocs/img/favicon.ico" alt="Happy Desire - WooCommerce Flutter App"/><h2 class="headerTitleWithLogo">Happy Desire - WooCommerce Flutter App</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/HappyDesireWooCommerceAppdocs/docs/welcome" target="_self">Documentation</a></li><li class=""><a href="/HappyDesireWooCommerceAppdocs/blog/" target="_self">Versions</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Google Sign in</h1></header><article><div><span><ul>
+<li>Go back to your Firebase console</li>
+<li>Go to <b>Authentication -&gt; Sign-in method</b></li>
+<li><b>Enable Google</b> and provide your support email.</li>
+</ul>
+<p><img src="/HappyDesireWooCommerceAppdocs/docs/assets/img/appconfig/googlesignin/1.png" alt="alt-text"></p>
+<ul>
+<li>Now go to the <b>Project Settings</b></li>
+</ul>
+<p><img src="/HappyDesireWooCommerceAppdocs/docs/assets/img/appconfig/googlesignin/2.png" alt="alt-text"></p>
+<h3><a class="anchor" aria-hidden="true" id="android-configuration"></a><a href="#android-configuration" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ANDROID CONFIGURATION</h3>
+<ul>
+<li>Slide down and press on <b>Add Fingerprint</b> in the Android Apps section</li>
+<li>Now go back to your Android Studio and run the following command in order to get the <b>SHA1</b> and <b>SHA256</b></li>
+</ul>
+<p><b>For Mac/Linux</b></p>
+<pre><code class="hljs"><span class="hljs-symbol">keytool</span> -list -v \
+-<span class="hljs-meta">alias</span> <span class="hljs-keyword">androiddebugkey </span>-keystore ~/.<span class="hljs-keyword">android/debug.keystore
+</span></code></pre>
+<p><b>For Windows</b></p>
+<pre><code class="hljs"><span class="hljs-symbol">keytool</span> -list -v \
+-<span class="hljs-meta">alias</span> <span class="hljs-keyword">androiddebugkey </span>-keystore %USERPROFILE%\.<span class="hljs-keyword">android\debug.keystore
+</span></code></pre>
+<p><img src="/HappyDesireWooCommerceAppdocs/docs/assets/img/appconfig/googlesignin/3.png" alt="alt-text"></p>
+<p><img src="/HappyDesireWooCommerceAppdocs/docs/assets/img/appconfig/googlesignin/4.png" alt="alt-text"></p>
+<blockquote>Note that the second command needs information from the generated signed key, if you have not generated a signed apk yet, come back later and run this second command.
+</blockquote>
+<p>After running this command you will get the <b>SHA1 and SHA256</b> for development mode, we need to run the second command for the release mode. (You have to replace <b>&quot;key&quot;</b> with your .jks file name, and replace the path <b>&quot;C:\Users\Gamer\key.jks&quot;</b> to the path where your .jks is located on your machine, replace also the storepass <b>&quot;pass&quot;</b> and the keypass <b>&quot;pass&quot;</b> to your information.</p>
+<pre><code class="hljs">keytool -<span class="hljs-built_in">list</span> -v \
+-<span class="hljs-built_in">alias</span> &lt;your-key-<span class="hljs-built_in">name</span>&gt; -keystore &lt;path-<span class="hljs-keyword">to</span>-production-keystore&gt;
+</code></pre>
+<p>example:</p>
+<pre><code class="hljs">keytool -list -v <span class="hljs-tag">\<span class="hljs-name">
+</span></span>-alias key -keystore "C:<span class="hljs-tag">\<span class="hljs-name">Users</span></span><span class="hljs-tag">\<span class="hljs-name">Gamer</span></span><span class="hljs-tag">\<span class="hljs-name">key</span></span>.jks" -storepass pass -keypass pass
+
+</code></pre>
+<p>When you run the commands you get the SHA1 and the SHA256 of both the development and the release versions of your app. Copy each one and add it in your Firebase fingerprint, you will end up having 2 SHA1 keys and 2 SHA256 keys</p>
+<ul>
+<li>After that, you have to <b>re-download</b> <b>google-services.json</b> and <b>googleservice-info.plist</b> and replace it with your old <b>google-services.json</b> and <b>googleservice-info.plist</b> (This step is very important because the old files didn't have the SHA required for the google sign in)</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="ios-configuration"></a><a href="#ios-configuration" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>IOS CONFIGURATION</h3>
+<ul>
+<li>Right click on the <b>ios</b> folder and press <b>open in xcode</b> then go to <b>Runner/Runner/GoogleService-Info.plist</b> there you will find a <b>key</b> called <b>REVERSED_CLIENT_ID</b> copy its value (e.g. com.googleusercontent.apps.861823949799-vc35cprkp249096uujjn0vvnmcvjppkn), go back to the flutter project then to <b>/ios/Runner/Info.plist</b> and change the <b>CFBundleURLSchemes</b> value the one you copied previously.</li>
+</ul>
+<p><img src="/HappyDesireWooCommerceAppdocs/docs/assets/img/appconfig/googlesignin/5.png" alt="alt-text"></p>
+<p><img src="/HappyDesireWooCommerceAppdocs/docs/assets/img/appconfig/googlesignin/6.png" alt="alt-text"></p>
+<p>The package setup can be found here: <a href="https://pub.dev/packages/google_sign_in">https://pub.dev/packages/google_sign_in</a></p>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/HappyDesireWooCommerceAppdocs/" class="nav-home"><img src="/HappyDesireWooCommerceAppdocs/img/favicon.ico" alt="Happy Desire - WooCommerce Flutter App" width="66" height="58"/></a><div><h5>Links</h5><a href="/HappyDesireWooCommerceAppdocs/docs/welcome.html">Documentation</a><a href="/HappyDesireWooCommerceAppdocs/blog">Versions</a></div><div><a href="https://codecanyon.net/user/royhayek/portfolio"><h5>CodeCanyon Portfolio</h5></a><a>Email: royhayek27@gmail.com</a></div></section><section class="copyright">Copyright © 2021 royhayek.com</section></footer></div></body></html>

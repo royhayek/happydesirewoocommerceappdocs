@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Apple Sign in · Happy Desire - WooCommerce Flutter App</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="* Right click on the &lt;b&gt;ios&lt;/b&gt; folder and press on &lt;b&gt;open in xcode&lt;/b&gt;"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Apple Sign in · Happy Desire - WooCommerce Flutter App"/><meta property="og:type" content="website"/><meta property="og:url" content="https://royhayek.github.io/HappyDesireWooCommerceAppdocs/"/><meta property="og:description" content="* Right click on the &lt;b&gt;ios&lt;/b&gt; folder and press on &lt;b&gt;open in xcode&lt;/b&gt;"/><meta property="og:image" content="https://royhayek.github.io/HappyDesireWooCommerceAppdocs/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://royhayek.github.io/HappyDesireWooCommerceAppdocs/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/HappyDesireWooCommerceAppdocs/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://royhayek.github.io/HappyDesireWooCommerceAppdocs/blog/atom.xml" title="Happy Desire - WooCommerce Flutter App Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://royhayek.github.io/HappyDesireWooCommerceAppdocs/blog/feed.xml" title="Happy Desire - WooCommerce Flutter App Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/HappyDesireWooCommerceAppdocs/js/scrollSpy.js"></script><link rel="stylesheet" href="/HappyDesireWooCommerceAppdocs/css/main.css"/><script src="/HappyDesireWooCommerceAppdocs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/HappyDesireWooCommerceAppdocs/"><img class="logo" src="/HappyDesireWooCommerceAppdocs/img/favicon.ico" alt="Happy Desire - WooCommerce Flutter App"/><h2 class="headerTitleWithLogo">Happy Desire - WooCommerce Flutter App</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/HappyDesireWooCommerceAppdocs/docs/welcome" target="_self">Documentation</a></li><li class=""><a href="/HappyDesireWooCommerceAppdocs/blog/" target="_self">Versions</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Apple Sign in</h1></header><article><div><span><ul>
+<li>Right click on the <b>ios</b> folder and press on <b>open in xcode</b></li>
+<li>Under Runner (file browser side bar) -&gt; Targets -&gt; Runner -&gt; Signing &amp; Capabilities
+Enable the <b>&quot;Sign in with Apple&quot;</b> listed under the capabilities (if not, add it via the +)</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="register-an-app-id"></a><a href="#register-an-app-id" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Register an App ID</h2>
+<p>If you don't have one yet, create a new one at <a href="https://developer.apple.com/account/resources/identifiers/list/bundleId">https://developer.apple.com/account/resources/identifiers/list/bundleId</a> following these steps:</p>
+<ul>
+<li>Click &quot;Register an App ID&quot;</li>
+<li>In the wizard select &quot;App IDs&quot;, click &quot;Continue&quot;</li>
+<li>Set the Description and Bundle ID, and select the Sign In with Apple capability
+Usually the default setting of &quot;Enable as a primary App ID&quot; should suffice here. If you ship multiple apps that should all share the same Apple ID credentials for your users, please consult the Apple documentation on how to best set these up.</li>
+<li>Click &quot;Continue&quot;, and then click &quot;Register&quot; to finish the creation of the App ID</li>
+</ul>
+<p>In case you already have an existing App ID that you want to use with Sign in with Apple:</p>
+<ul>
+<li>Open that App ID from the list</li>
+<li>Check the &quot;Sign in with Apple&quot; capability</li>
+<li>Click &quot;Save&quot;
+If you have change your app's capabilities, you need to fetch the updated provisioning profiles (for example via Xcode) to use the new capabilities.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="create-a-service-id"></a><a href="#create-a-service-id" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Create a Service ID</h2>
+<p>Next go to <a href="https://developer.apple.com/account/resources/identifiers/list/serviceId">https://developer.apple.com/account/resources/identifiers/list/serviceId</a> and follow these steps:</p>
+<ul>
+<li>Click &quot;Register an Services ID&quot;</li>
+<li>Select &quot;Services IDs&quot;, click &quot;Continue&quot;</li>
+<li>Set your &quot;Description&quot; and &quot;Identifier&quot;
+<ul>
+<li>The &quot;Identifier&quot; will later be referred to as your clientID</li>
+</ul></li>
+<li>Click &quot;Continue&quot; and then &quot;Register&quot;</li>
+</ul>
+<p>Now that the service is created, we have to enable it to be used for Sign in with Apple:</p>
+<ul>
+<li>Select the service from the list of services</li>
+<li>Check the box next to &quot;Sign in with Apple&quot;, then click &quot;Configure&quot;</li>
+<li>In the Domains and Subdomains add the domains of the websites on which you want to use Sign in with Apple, e.g. example.com. You have to enter at least one domain here, even if you don't intend to use Sign in with Apple on any website.</li>
+<li>In the Return URLs box add the full return URL you want to use, e.g. <a href="https://example.com/callbacks/sign_in_with_apple">https://example.com/callbacks/sign_in_with_apple</a></li>
+<li>Click &quot;Next&quot; and then &quot;Done&quot; to close the settings dialog</li>
+<li>Click &quot;Continue&quot; and then &quot;Save&quot; to update the service</li>
+</ul>
+<p>In order to communicate with Apple's servers to verify the incoming authorization codes from your app clients, you need to create a key at <a href="https://developer.apple.com/account/resources/authkeys/list">https://developer.apple.com/account/resources/authkeys/list</a>:</p>
+<ul>
+<li>Click &quot;Create a key&quot;</li>
+<li>Set the &quot;Key Name&quot; (E.g. &quot;Sign in with Apple key&quot;)</li>
+<li>Check the box next to &quot;Sign in with Apple&quot;, then click &quot;Configure&quot; on the same row</li>
+<li>Under &quot;Primary App ID&quot; select the App ID of the app you want to use (either the newly created one or an existing one)</li>
+<li>Click &quot;Save&quot; to leave the detail view</li>
+<li>Click &quot;Continue&quot; and then click &quot;Register&quot;</li>
+<li>Now you'll see a one-time-only screen where you must download the key by clicking the &quot;Download&quot; button
+<ul>
+<li>Also note the &quot;Key ID&quot; which will be used later when configuring the server</li>
+</ul></li>
+</ul>
+<p>Now everything is set up on Apple's developer portal and we can start setting up the server.</p>
+<h2><a class="anchor" aria-hidden="true" id="server"></a><a href="#server" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Server</h2>
+<p>The server part is usually integrated into your existing backends, and there are existing packages for most existing programming languages and web frameworks out there.</p>
+<p>In our case we will be using firebase.</p>
+<ul>
+<li><p>Go to your Firebase Console, then go to Authentication, Sign-in method and enable Apple.</p></li>
+<li><p>Write the Service ID that you made in your Apple developer account.</p></li>
+<li><p>Expand the OAuth code flow configuration and fill the requested information:</p>
+<ul>
+<li>The Apple team ID is taken from the apple developer account.</li>
+<li>The key ID is taken from the key that you have just created in the apple developer account.</li>
+<li>And in the private key, open the .p8 file that you download from apple and copy its content, it should look like this</li>
+</ul>
+<pre><code class="hljs">-----BEGIN <span class="hljs-keyword">PRIVATE</span> <span class="hljs-keyword">KEY</span>-----
+MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgLgAyMbIj92aRS2LO
+LT5MhgLXSgL1HJBkJhayzhURRNWgCgYIKoZIzj0DAQehRANCAAQRfvgQhTQYaopz
+otY8g2MHWMXWMpyz6/FN5kDDRiMgBoeDuzkxQBDVXBHUBgpvfwg8i/l2E8KPNXp3
+dodliuxz
+-----<span class="hljs-keyword">END</span> <span class="hljs-keyword">PRIVATE</span> <span class="hljs-keyword">KEY</span>-----
+</code></pre></li>
+<li><p>Then copy the Callback URL which is at the bottom of the form and paste it in the REDIRECT_URL located in your app folder <b>lib/config/AppConfig.dart</b></p></li>
+<li><p>In the AppConfig.dart change also the CLIENT_ID to the client id that you have set in firebase.</p></li>
+</ul>
+<p>The package setup can be found here: <a href="https://pub.dev/packages/sign_in_with_apple">https://pub.dev/packages/sign_in_with_apple</a></p>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#register-an-app-id">Register an App ID</a></li><li><a href="#create-a-service-id">Create a Service ID</a></li><li><a href="#server">Server</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/HappyDesireWooCommerceAppdocs/" class="nav-home"><img src="/HappyDesireWooCommerceAppdocs/img/favicon.ico" alt="Happy Desire - WooCommerce Flutter App" width="66" height="58"/></a><div><h5>Links</h5><a href="/HappyDesireWooCommerceAppdocs/docs/welcome.html">Documentation</a><a href="/HappyDesireWooCommerceAppdocs/blog">Versions</a></div><div><a href="https://codecanyon.net/user/royhayek/portfolio"><h5>CodeCanyon Portfolio</h5></a><a>Email: royhayek27@gmail.com</a></div></section><section class="copyright">Copyright © 2021 royhayek.com</section></footer></div></body></html>
