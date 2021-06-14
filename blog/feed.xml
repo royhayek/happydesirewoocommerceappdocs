@@ -2,21 +2,21 @@
 <rss version="2.0">
     <channel>
         <title>Happy Desire - WooCommerce Flutter App Blog</title>
-        <link>https://royhayek.github.io/HappyDesireWooCommerceAppdocs/blog</link>
+        <link>https://royhayek.github.io/happydesirewoocommerceappdocs/blog</link>
         <description>The best place to stay up-to-date with the latest Happy Desire - WooCommerce Flutter App news and events.</description>
         <lastBuildDate>Tue, 15 Jun 2021 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
             <title>Happy Desire - WooCommerce Flutter App Blog</title>
-            <url>https://royhayek.github.io/HappyDesireWooCommerceAppdocs/img/favicon.ico</url>
-            <link>https://royhayek.github.io/HappyDesireWooCommerceAppdocs/blog</link>
+            <url>https://royhayek.github.io/happydesirewoocommerceappdocs/img/favicon.ico</url>
+            <link>https://royhayek.github.io/happydesirewoocommerceappdocs/blog</link>
         </image>
         <copyright>Copyright © 2021 royhayek.com</copyright>
         <item>
             <title><![CDATA[Version 1.0]]></title>
-            <link>https://royhayek.github.io/HappyDesireWooCommerceAppdocs/blog/2021/06/15/version-1.0.html</link>
-            <guid>https://royhayek.github.io/HappyDesireWooCommerceAppdocs/blog/2021/06/15/version-1.0.html</guid>
+            <link>https://royhayek.github.io/happydesirewoocommerceappdocs/blog/2021/06/15/version-1.0.html</link>
+            <guid>https://royhayek.github.io/happydesirewoocommerceappdocs/blog/2021/06/15/version-1.0.html</guid>
             <pubDate>Tue, 15 Jun 2021 06:00:00 GMT</pubDate>
             <description><![CDATA[<ul> <li>Initial Release</li> </ul> ]]></description>
         </item>

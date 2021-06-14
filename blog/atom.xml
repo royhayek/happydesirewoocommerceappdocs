@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://royhayek.github.io/HappyDesireWooCommerceAppdocs/blog</id>
+    <id>https://royhayek.github.io/happydesirewoocommerceappdocs/blog</id>
     <title>Happy Desire - WooCommerce Flutter App Blog</title>
     <updated>2021-06-15T06:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://royhayek.github.io/HappyDesireWooCommerceAppdocs/blog"/>
+    <link rel="alternate" href="https://royhayek.github.io/happydesirewoocommerceappdocs/blog"/>
     <subtitle>The best place to stay up-to-date with the latest Happy Desire - WooCommerce Flutter App news and events.</subtitle>
-    <logo>https://royhayek.github.io/HappyDesireWooCommerceAppdocs/img/favicon.ico</logo>
+    <logo>https://royhayek.github.io/happydesirewoocommerceappdocs/img/favicon.ico</logo>
     <rights>Copyright © 2021 royhayek.com</rights>
     <entry>
         <title type="html"><![CDATA[Version 1.0]]></title>
-        <id>https://royhayek.github.io/HappyDesireWooCommerceAppdocs/blog/2021/06/15/version-1.0.html</id>
-        <link href="https://royhayek.github.io/HappyDesireWooCommerceAppdocs/blog/2021/06/15/version-1.0.html"/>
+        <id>https://royhayek.github.io/happydesirewoocommerceappdocs/blog/2021/06/15/version-1.0.html</id>
+        <link href="https://royhayek.github.io/happydesirewoocommerceappdocs/blog/2021/06/15/version-1.0.html"/>
         <updated>2021-06-15T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<ul> <li>Initial Release</li> </ul> ]]></summary>
         <author>
